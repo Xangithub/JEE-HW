@@ -1,0 +1,38 @@
+ul {
+    list-style: none;
+}
+
+.menu {
+    background: #1A9C32;
+    height: 50px
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu ul:after {
+    clear: both;
+    display: table;
+    width: 100%;
+    height: 0;
+    content: ' ';
+}
+
+.menu li {
+    float: left;
+    background: url(https://help.gnome.org/users/gnome-help/stable/figures/preferences-desktop-accessibility-symbolic.svg) 7px center no-repeat;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+
+.menu li:hover {
+    background: url(https://help.gnome.org/users/gnome-help/stable/figures/preferences-desktop-accessibility-symbolic.svg) 7px center no-repeat #23BA15;
+}
+
+.menu a {
+    display: block;
+    padding: 0 30px;
+    line-height: 50px;
+}
