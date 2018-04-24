@@ -5,7 +5,24 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>
+
+<h:head>
+    <title>
+        JSF index страница
+    </title>
+</h:head>
+
+<h:body>
+    <f:view>
+        <h:outputLabel value="Список продуктов"/>
+    </f:view>
+    <h:dataTable value="#{list.productList}" var="l" border="1">
+        <h:column>#{l.id}-#{l.nameProduct}-#{l.descrProduct}</h:column>
+    </h:dataTable>
+
+
+</h:body>
+
+
+
 </html>
